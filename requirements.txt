@@ -1,0 +1,8 @@
+Flask==3.0.2
+Flask-SQLAlchemy==3.1.1
+Werkzeug==3.0.1
+Pydantic
+Python-Dotenv
+Pymongo
+pytest
+requests
