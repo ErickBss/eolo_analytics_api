@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from config.database import db
 from models.challenge import DateTime, DataAggregate, Geolocation
 from pydantic import ValidationError
@@ -20,6 +21,8 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Inicializa a aplicação com o banco de dados
 db.init_app(app)
+
+CORS(app)
 
 
 # Cria uma rota GET para retornar dados meteorológicos

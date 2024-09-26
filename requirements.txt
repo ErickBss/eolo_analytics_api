@@ -6,3 +6,4 @@ Python-Dotenv
 Pymongo
 pytest
 requests
+flask_cors
